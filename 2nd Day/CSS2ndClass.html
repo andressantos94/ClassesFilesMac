@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Esto es Internal CSS pero global a todos los elementos que se deseen modificar -->
+		<style type="text/css">
+			li{
+				list-style-type: none;
+				display: inline-block;
+				width: 23%;
+				text-align: center;;
+			}
+			div {
+				height: 400px;
+				width: 500px;
+			}
+			h1{
+				text-align: center;
+			}
+
+			/*Asi es como se declaran las clases en CSS*/
+			.makeBlue{
+				color: blue;
+			}
+
+			.overImage{
+				border: solid 3px orange;
+				width: 500px;
+				/*position: relative; top: 100px; left: 100px;*/
+			}
+
+			.overImage img{
+				width: 100%;
+			}
+
+			.overImage h1{
+				position: relative;  
+				text-align: center;	
+			}
+			/* Ejemplo de como mostrar los elementos uno al lado de otro en vez de uno debajo del otro
+			p{
+				display: inline-block;
+			}
+			*/
+		</style>
+		<!-- Esto es hacer link a un archivo css para el formato de los elementos
+		<link rel="stylesheet" type="text/css" href="style.css">
+		-->
+		<title></title>
+	</head>
+	<body>
+		<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+		<p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+		<p>cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc</p>
+		<!-- Esto es In line CSS, modificando especificamente al elemento deseado -->
+		<ul style="border: solid 5px black;">
+			<li><a href="#static">Static</a></li>
+			<li><a href="#absolute">Absolute</a></li>
+			<li>Fixed</li>
+			<li><a href="#relative">Relative</a></li>
+		</ul>
+		<aside class="overImage">
+			<h1 class="makeBlue">What text?</h1>
+			<img src="https://i.ytimg.com/vi/FnCdOQsX5kc/maxresdefault.jpg">
+		</aside>
+		<aside class="overImage">
+			<h1>Halloween is here!</h1>
+			<img src="http://cdn.history.com/sites/2/2013/11/Halloween-Hero-1-A.jpeg">
+		</aside>
+
+		<div id="static" style="background-color: #00FF00">
+			<h1>This is Static One</h1>
+		</div>
+		<div id="absolute" style="background-color: rgb(255,0,0); position: absolute; top: 900px; left: 650px" >
+			<h1>This is Absolute One</h1>
+		</div>
+		<div id="fixed" style="background-color: #FF00FF; position: fixed; top: 200px; left: 700px;">
+			<h1>This is Fixed One</h1>
+		</div>
+		<div id="relative" style="position: relative; background-color: #AACCDD; top: 10px">
+			<h1>This is Relative One</h1>
+		</div>
+	</body>
+</html>

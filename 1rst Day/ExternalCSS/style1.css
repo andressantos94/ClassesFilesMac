@@ -1,0 +1,38 @@
+body{
+	background-color: #AA2211;
+}
+h1{
+	font-size: 100px;
+	color: #00FF00;
+}
+div{
+	font-style: italic;
+	background-color: black;
+	color: yellow;
+	padding: 50px;
+}
+p{
+	font-weight: bold;
+	font-size: 75px;
+}
+img{
+	float: left;
+	border-style: solid;
+	border: 10px;
+	border-color: white;
+	height: 65%;
+	width: 65%;
+}
+table{
+	font-size: 25px;
+	text-align: center;
+	background-color: blue;
+	border-color: black;
+	border-style: dotted;
+	border-width: medium;
+}
+th,td{
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+}

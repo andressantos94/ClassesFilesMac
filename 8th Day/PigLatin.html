@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="label"></h1>
+		<script type="text/javascript">
+			var word = prompt("Give me a word, and I'll translate it in 'Latin': ");
+			word = word.toLowerCase();
+			console.log(word);
+			document.getElementById("label").innerHTML = word + " is '" + word.slice(1,word.lenght) + word.charAt(0) + "ay' in Latin";
+
+		</script>
+	</body>
+</html>
